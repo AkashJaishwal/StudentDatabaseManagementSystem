@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+  }
+  .container {
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  .container:hover {
+    transform: scale(1.05);
+  }
+  .container::before {
+    content: '';
+    position: absolute;
+    top: -2px; right: -2px; bottom: -2px; left: -2px;
+    background: linear-gradient(60deg, #f06, #aef, #faa, #6af);
+    background-size: 300% 300%;
+    z-index: -1;
+    animation: moveGradient 4s linear infinite;
+    border-radius: 5px;
+  }
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  p {
+    color: #1b0c0c;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .highlight {
+    color: #f06;
+    font-weight: bold;
+  }
+  @keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>About Us</h1>
+  <p> We are Akash Jaiswal (Roll No. 21052935) and Geetika Padam (Roll No. 2105460), students pursuing Computer Science and Engineering at KIIT University. As part of our coursework in cloud computing, we embarked on a collaborative project guided by Professor Kamlesh Karmakar. Our project, the Student Database Management System, is an innovative application of cloud computing principles to educational administration. With a keen focus on optimizing data management processes, our project seeks to revolutionize student information management for academic institutions. Through diligent research and practical implementation, we have developed an efficient and scalable solution tailored to meet the evolving needs of educational institutions in the digital age. Our dedication to leveraging cloud technologies underscores our commitment to academic excellence and innovation in the field of computer science.</p>
+</div>
+
+</body>
+</html>

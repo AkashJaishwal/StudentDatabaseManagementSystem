@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student Information</title>
+</head>
+<center>
+    <font color="black" size="4" style="font-family: avenir">
+
+        <h1 style="color: DodgerBlue">Student Database</h1>
+
+        <body bgcolor="lightgrey">
+
+            <form action="/addstudent" autocomplete="on" method="POST" enctype="multipart/form-data">
+
+                <button type="submit" formaction="/getstudent" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GET STUDENT INFORMATION</button><br><br>
+
+                Student ID:<br> <input style="height:25px;font-size:14pt; color:grey;" type="number" name="student_id" autofocus size="40"><br><br>
+
+                First Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="first_name" ><br><br>
+
+                Last Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="last_name"><br><br>
+
+                GPA:<br> <input style="height:25px;font-size:14pt;color:grey;" type="number" step="0.01" name="gpa"><br><br>
+
+                Courses Enrolled:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="courses"><br><br>
+
+                Image: <input type=file name="student_image_file" style="height:25px;font-size:14pt;color:grey;"> <br><br>
+
+                <button type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">UPDATE DATABASE</button>
+
+            </form>
+            <a href="/about">About Us</a>
+        </body>
+
+    </font>
+</center>
+</html>
